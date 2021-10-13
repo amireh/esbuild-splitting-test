@@ -1,5 +1,5 @@
-import './i18nObj.js'
+import './core.js'
 
 const container = typeof global === 'undefined' ? window : global
 container.evaluations = container.evaluations || []
-container.evaluations.push('translations')
+container.evaluations.push('a')

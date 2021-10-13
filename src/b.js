@@ -1,3 +1,5 @@
+import './core.js'
+
 const container = typeof global === 'undefined' ? window : global
 container.evaluations = container.evaluations || []
-container.evaluations.push('i18nObj')
+container.evaluations.push('b')

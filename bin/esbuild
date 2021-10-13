@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-rm -rf dist/esbuild
-mkdir -p dist/esbuild
-npx esbuild --bundle --splitting --format=esm --outdir=dist/esbuild src/index.js

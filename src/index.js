@@ -1,6 +1,10 @@
-import './translations.js'
-import './i18nObjConsumer.js'
-import('./i18nObjConsumer.js')
+import './a.js'
+import './b.js'
+import('./b.js')
 
-const container = typeof global === 'undefined' ? window : global
-console.log(container.evaluations)
+if (typeof window !== 'undefined') {
+  document.body.innerText = evaluations.join(' -> ')
+}
+else {
+  console.log(evaluations)
+}
