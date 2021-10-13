@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+rm -rf dist/webpack && mkdir -p dist/webpack
+npx webpack --mode=development --entry=$PWD/src/index.js -o $PWD/dist/webpack
