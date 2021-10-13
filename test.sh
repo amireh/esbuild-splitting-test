@@ -14,7 +14,10 @@ rollup() {
 }
 
 webpack() {
-  npx webpack "$@" --mode=development --entry="$PWD/src/index.js" -o "$PWD/dist/webpack"
+  npx webpack "$@" \
+    --entry="$PWD/src/index.js" \
+    --output-path="$PWD/dist/webpack" &&
+  echo '{"type": "commonjs"}' > "$PWD"/dist/webpack/package.json
 }
 
 rm -rf dist
